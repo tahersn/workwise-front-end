@@ -1,7 +1,26 @@
-# Vue 3 + Vite
+# WorkWise
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+WorkWise is a job board application built using Vue3/Vite for the frontend and Django/sqlite for the backend. It provides dynamic and responsive user interfaces to interact with the backend through API calls.
 
-## Recommended IDE Setup
+## Get Started
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Frontend (Vue3/Vite)
+
+1. **Clone the Repository:**
+    ```bash
+    git clone https://github.com/tahersn/workwise-front-end.git
+
+2. **Install Dependencies:**
+    ```bash
+    npm install
+    ```
+
+3. **Run the Development Server:**
+    ```bash
+    npm run dev
+    ```
+    Access the app at [http://localhost:5173](http://localhost:5173).
+
+### Backend (Django/sqlite)
+    Access the Django backend at [https://github.com/tahersn/workwise](https://github.com/tahersn/workwise).
+
