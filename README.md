@@ -3,6 +3,8 @@
 WorkWise is a job board application built using Vue3/Vite for the frontend and Django/sqlite for the backend. 
 WorkWise-front-end provides dynamic and responsive user interfaces to interact with the backend through API calls.
 
+⚠️ **Currently working on the UI on Figma** [https://www.figma.com/file/KSfZbOnu33mk3eIyvwELRP/WorkWise?type=design&node-id=0-1&mode=design&t=tUb1ymR065rwMzle-0](Take a look )
+
 ## Get Started
 
 ### Frontend (Vue3/Vite)
