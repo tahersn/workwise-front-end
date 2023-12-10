@@ -21,6 +21,6 @@ WorkWise is a job board application built using Vue3/Vite for the frontend and D
     ```
     Access the app at [http://localhost:5173](http://localhost:5173).
 
-### Backend (Django/sqlite)
-    Access the Django backend at [https://github.com/tahersn/workwise](https://github.com/tahersn/workwise).
+## Backend (Django/sqlite)
+Access the Django backend at [https://github.com/tahersn/workwise](https://github.com/tahersn/workwise).
 
