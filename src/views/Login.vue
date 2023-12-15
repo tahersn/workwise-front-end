@@ -19,7 +19,7 @@
 
                     <div class="flex flex-col w-full p-2">
                     <a class="font-bold text-[#383D42] pb-2">Forgot password ?</a>
-                    <p class="font-bold text-[#383D42] pb-2"> Register</p>
+                    <a href="/register" class="font-bold text-[#383D42] pb-2 hover:text-orange-600"> Register</a>
                     </div>
                     <div class="flex flex-row justify-between w-full px-6 py-2">
                         <div>

@@ -23,7 +23,7 @@
                     <input id="Pass" type="password" class="rounded-md bg-[#EEEEEE] text-[#A2A2A2] w-full p-2 mb-2 outline-orange-500" placeholder="********" />
 
                     <div class="flex flex-col w-full p-2">
-                    <p class="font-bold text-[#383D42] pb-2 cursor-pointer hover:text-orange-600"> Sign-in ?</p>
+                    <a href="/login" class="font-bold text-[#383D42] pb-2 cursor-pointer hover:text-orange-600"> Sign-in ?</a>
                     </div>
                     <div class="flex flex-row justify-between w-full px-6 pt-2">
                         <div class="hover:cursor-pointer hover:shadow-md">
