@@ -14,16 +14,16 @@
                     <form class="flex flex-col " @submit.prevent="onSubmit">
                     <label for="name"  class="text-[#383D42] font-bold text-[20px] float-left">First Name</label>
                     <input id="name" v-model="userData.fn" type="text" class="rounded-md bg-[#EEEEEE] text-[#A2A2A2] w-full p-1 mb-1 outline-orange-500" placeholder="What's your first name" />
-                    <label for="name" class="text-[#383D42] font-bold text-[20px] float-left">Last Name</label>
-                    <input id="name" v-model="userData.ln" type="text" class="rounded-md bg-[#EEEEEE] text-[#A2A2A2] w-full p-1 mb-1 outline-orange-500" placeholder="What's your last name " />
-                    <label for="name" class="text-[#383D42] font-bold text-[20px] float-left">Username</label>
-                    <input id="name" v-model="userData.un" type="text" class="rounded-md bg-[#EEEEEE] text-[#A2A2A2] w-full p-1 mb-1 outline-orange-500" placeholder="What's your username " />
-                    <label for="name" class="text-[#383D42] font-bold text-[20px] float-left">E-mail</label>
-                    <input id="name" v-model="userData.email" type="text" class="rounded-md bg-[#EEEEEE] text-[#A2A2A2] w-full p-1 mb-1 outline-orange-500" placeholder="example@email.com" />
+                    <label for="lname" class="text-[#383D42] font-bold text-[20px] float-left">Last Name</label>
+                    <input id="lname" v-model="userData.ln" type="text" class="rounded-md bg-[#EEEEEE] text-[#A2A2A2] w-full p-1 mb-1 outline-orange-500" placeholder="What's your last name " />
+                    <label for="uname" class="text-[#383D42] font-bold text-[20px] float-left">Username</label>
+                    <input id="uname" v-model="userData.un" type="text" class="rounded-md bg-[#EEEEEE] text-[#A2A2A2] w-full p-1 mb-1 outline-orange-500" placeholder="What's your username " />
+                    <label for="email" class="text-[#383D42] font-bold text-[20px] float-left">E-mail</label>
+                    <input id="email" v-model="userData.email" type="text" class="rounded-md bg-[#EEEEEE] text-[#A2A2A2] w-full p-1 mb-1 outline-orange-500" placeholder="example@email.com" />
                     <label for="Pass" class="text-[#383D42] font-bold text-[20px] float-left">Password</label>
                     <input id="Pass" v-model="userData.password" type="password" class="rounded-md bg-[#EEEEEE] text-[#A2A2A2] w-full p-1 mb-1 outline-orange-500" placeholder="********" />
-                    <label for="Pass" class="text-[#383D42] font-bold text-[20px] float-left">Confirm Password</label>
-                    <input id="Pass" v-model="userData.cpassword" type="password" class="rounded-md bg-[#EEEEEE] text-[#A2A2A2] w-full p-1 mb-1 outline-orange-500" placeholder="********" />
+                    <label for="cPass" class="text-[#383D42] font-bold text-[20px] float-left">Confirm Password</label>
+                    <input id="cPass" v-model="userData.cpassword" type="password" class="rounded-md bg-[#EEEEEE] text-[#A2A2A2] w-full p-1 mb-1 outline-orange-500" placeholder="********" />
                     <button type="submit" class="bg-[#FF6B15] text-white rounded-full w-full p-2 mt-1 hover:bg-[#FF812D] ">Sign-up</button>
                 </form>
                     <div class="flex flex-col w-full p-2">
@@ -45,21 +45,29 @@
 </template>
 
 <script>
-import signUp from '../services/Auth.js'
+import {signUp} from '@/services/Auth.js'
 
-const userData = {
-    fn: '',
-    ln: '',
-    un: '',
-    email: '',
-    password: '',
-    cpassword: ''
-}
+export default {
+    name: 'Register',
+    data() {
+        return {
+            userData :{
+            fn: '',
+            ln: '',
+            un: '',
+            email: '',
+            password: '',
+            cpassword: ''
+            }
+        };
+    },
 
-const onSubmit = () => { 
-    console.log(userData);}
-
-    export default {
-        name: 'Register'
-    };
+    methods :{ onSubmit() { 
+        
+        console.log(this.userData);
+    
+        signUp(this.userData)}
+        }
+    
+};
 </script>
